@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/logo.svg"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +9,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
        
-          <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold">
-              WashMate
-            </a>
+         <div className="flex-shrink-0  ">
+           <img src={logo} alt="Logo"/>
           </div>
+
 
       
           <div className="hidden md:flex space-x-8">
